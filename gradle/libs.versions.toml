@@ -1,0 +1,9 @@
+[versions]
+agp = "8.7.1"
+
+[libraries]
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+maven-publish = { id = 'maven-publish' }
+
