@@ -20,16 +20,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# com.v7878.r8.annotations.DoNotShrinkFull
--dontwarn com.v7878.r8.annotations.DoNotShrinkFull
--keep, allowoptimization, allowobfuscation
-    @com.v7878.r8.annotations.DoNotShrinkFull class * {*;}
--keepclasseswithmembers, allowoptimization, allowobfuscation class * {
-    @com.v7878.r8.annotations.DoNotShrinkFull <init>(...);
-    @com.v7878.r8.annotations.DoNotShrinkFull <methods>;
-    @com.v7878.r8.annotations.DoNotShrinkFull <fields>;
-}
-
 # com.v7878.r8.annotations.DoNotShrink
 -dontwarn com.v7878.r8.annotations.DoNotShrink
 -keepclassmembers, allowoptimization, allowobfuscation
@@ -44,16 +34,6 @@
 -dontwarn com.v7878.r8.annotations.DoNotShrinkType
 -keep, allowoptimization, allowobfuscation
     @com.v7878.r8.annotations.DoNotShrinkType class * {}
-
-# com.v7878.r8.annotations.DoNotObfuscateFull
--dontwarn com.v7878.r8.annotations.DoNotObfuscateFull
--keep, allowshrinking, allowoptimization
-    @com.v7878.r8.annotations.DoNotObfuscateFull class * {*;}
--keepclasseswithmembers, allowshrinking, allowoptimization class * {
-    @com.v7878.r8.annotations.DoNotObfuscateFull <init>(...);
-    @com.v7878.r8.annotations.DoNotObfuscateFull <methods>;
-    @com.v7878.r8.annotations.DoNotObfuscateFull <fields>;
-}
 
 # com.v7878.r8.annotations.DoNotObfuscate
 -dontwarn com.v7878.r8.annotations.DoNotObfuscate
