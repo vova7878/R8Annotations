@@ -26,6 +26,7 @@ android {
 }
 
 dependencies {
+    compileOnly project(":fake_android")
 }
 
 publishing {
