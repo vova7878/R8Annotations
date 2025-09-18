@@ -60,13 +60,13 @@
     @com.v7878.r8.annotations.DoNotOptimize <fields>;
 }
 
-# com.v7878.r8.annotations.KeepCodeAttribute
--dontwarn com.v7878.r8.annotations.KeepCodeAttribute
+# com.v7878.r8.annotations.KeepCode
+-dontwarn com.v7878.r8.annotations.KeepCode
 -keepclassmembers, allowshrinking, allowobfuscation, allowoptimization, includecode
-    @com.v7878.r8.annotations.KeepCodeAttribute class * {*;}
+    @com.v7878.r8.annotations.KeepCode class * {*;}
 -keepclassmembers, allowshrinking, allowobfuscation, allowoptimization, includecode class * {
-    @com.v7878.r8.annotations.KeepCodeAttribute <init>(...);
-    @com.v7878.r8.annotations.KeepCodeAttribute <methods>;
+    @com.v7878.r8.annotations.KeepCode <init>(...);
+    @com.v7878.r8.annotations.KeepCode <methods>;
 }
 
 # com.v7878.r8.annotations.KeepAttributes

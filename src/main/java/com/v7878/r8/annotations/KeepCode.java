@@ -32,5 +32,5 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.CLASS)
 @Target({TYPE, CONSTRUCTOR, METHOD})
-public @interface KeepCodeAttribute {
+public @interface KeepCode {
 }

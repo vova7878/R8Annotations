@@ -2,6 +2,7 @@ pluginManagement {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
@@ -12,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "R8Annotations"
-include ':fake_android'
+include(":stub_android")
