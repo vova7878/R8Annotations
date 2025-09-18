@@ -25,7 +25,6 @@ android {
 }
 
 dependencies {
-    compileOnly(project(":stub_android"))
 }
 
 publishing {
