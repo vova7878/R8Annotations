@@ -33,7 +33,7 @@
 # com.v7878.r8.annotations.DoNotShrinkType
 -dontwarn com.v7878.r8.annotations.DoNotShrinkType
 -keep, allowoptimization, allowobfuscation
-    @com.v7878.r8.annotations.DoNotShrinkType class * {}
+    @com.v7878.r8.annotations.DoNotShrinkType class *
 
 # com.v7878.r8.annotations.DoNotObfuscate
 -dontwarn com.v7878.r8.annotations.DoNotObfuscate
@@ -48,7 +48,7 @@
 # com.v7878.r8.annotations.DoNotObfuscateType
 -dontwarn com.v7878.r8.annotations.DoNotObfuscateType
 -keep, allowshrinking, allowoptimization
-    @com.v7878.r8.annotations.DoNotObfuscateType class * {}
+    @com.v7878.r8.annotations.DoNotObfuscateType class *
 
 # com.v7878.r8.annotations.DoNotOptimize
 -dontwarn com.v7878.r8.annotations.DoNotOptimize
