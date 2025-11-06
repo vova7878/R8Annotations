@@ -1,6 +1,6 @@
 # MIT License
 #
-# Copyright (c) 2024 Vladimir Kozelkov
+# Copyright (c) 2024 - 2025 Vladimir Kozelkov
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +21,6 @@
 # SOFTWARE.
 
 # com.v7878.r8.annotations.DoNotShrink
--dontwarn com.v7878.r8.annotations.DoNotShrink
 -keepclassmembers, allowoptimization, allowobfuscation
     @com.v7878.r8.annotations.DoNotShrink class * {*;}
 -keepclassmembers, allowoptimization, allowobfuscation class * {
@@ -31,12 +30,10 @@
 }
 
 # com.v7878.r8.annotations.DoNotShrinkType
--dontwarn com.v7878.r8.annotations.DoNotShrinkType
 -keep, allowoptimization, allowobfuscation
     @com.v7878.r8.annotations.DoNotShrinkType class *
 
 # com.v7878.r8.annotations.DoNotObfuscate
--dontwarn com.v7878.r8.annotations.DoNotObfuscate
 -keepclassmembers, allowshrinking, allowoptimization
     @com.v7878.r8.annotations.DoNotObfuscate class * {*;}
 -keepclassmembers, allowshrinking, allowoptimization class * {
@@ -46,12 +43,10 @@
 }
 
 # com.v7878.r8.annotations.DoNotObfuscateType
--dontwarn com.v7878.r8.annotations.DoNotObfuscateType
 -keep, allowshrinking, allowoptimization
     @com.v7878.r8.annotations.DoNotObfuscateType class *
 
 # com.v7878.r8.annotations.DoNotOptimize
--dontwarn com.v7878.r8.annotations.DoNotOptimize
 -keepclassmembers, allowshrinking, allowobfuscation
     @com.v7878.r8.annotations.DoNotOptimize class * {*;}
 -keepclassmembers, allowshrinking, allowobfuscation class * {
@@ -61,7 +56,6 @@
 }
 
 # com.v7878.r8.annotations.KeepCode
--dontwarn com.v7878.r8.annotations.KeepCode
 -keepclassmembers, allowshrinking, allowobfuscation, allowoptimization, includecode
     @com.v7878.r8.annotations.KeepCode class * {*;}
 -keepclassmembers, allowshrinking, allowobfuscation, allowoptimization, includecode class * {
@@ -70,7 +64,6 @@
 }
 
 # com.v7878.r8.annotations.KeepAttributes
--dontwarn com.v7878.r8.annotations.KeepAttributes
 -keep, allowshrinking, allowobfuscation, allowoptimization
     @com.v7878.r8.annotations.KeepAttributes class * {*;}
 -keepclassmembers, allowshrinking, allowobfuscation, allowoptimization class * {
@@ -80,7 +73,6 @@
 }
 
 # com.v7878.r8.annotations.NoSideEffects
--dontwarn com.v7878.r8.annotations.NoSideEffects
 -assumenosideeffects @com.v7878.r8.annotations.NoSideEffects class * {*;}
 -assumenosideeffects class * {
     @com.v7878.r8.annotations.NoSideEffects <init>(...);
@@ -91,14 +83,12 @@
 # R8 specific annotations
 
 # com.v7878.r8.annotations.AlwaysInline
--dontwarn com.v7878.r8.annotations.AlwaysInline
 -alwaysinline class * {
     @com.v7878.r8.annotations.AlwaysInline <init>(...);
     @com.v7878.r8.annotations.AlwaysInline <methods>;
 }
 
 # com.v7878.r8.annotations.CheckDiscard
--dontwarn com.v7878.r8.annotations.CheckDiscard
 -checkdiscard @com.v7878.r8.annotations.CheckDiscard class *
 -checkdiscard class * {
     @com.v7878.r8.annotations.CheckDiscard <init>(...);
