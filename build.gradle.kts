@@ -1,4 +1,6 @@
 import com.vanniktech.maven.publish.AndroidMultiVariantLibrary
+import com.vanniktech.maven.publish.JavadocJar
+import com.vanniktech.maven.publish.SourcesJar
 
 plugins {
     alias(libs.plugins.android.library)
@@ -10,8 +12,12 @@ java {
 }
 
 android {
+    enableKotlin = false
+
     namespace = "com.v7878.r8.annotations"
-    compileSdk = 36
+    compileSdk {
+        version = release(36)
+    }
 
     defaultConfig {
         minSdk = 26
@@ -28,8 +34,8 @@ mavenPublishing {
     signAllPublications()
     configure(
         AndroidMultiVariantLibrary(
-            sourcesJar = true,
-            publishJavadocJar = false,
+            javadocJar = JavadocJar.Empty(),
+            sourcesJar = SourcesJar.Sources()
         )
     )
 
